@@ -1,0 +1,54 @@
+/* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Makes the navbar stick to the top */
+  top: 0; /* Aligns it to the very top of the viewport */
+  left: 0; /* Ensures it spans from the left edge */
+  right: 0; /* Ensures it spans to the right edge */
+  z-index: 1000; /* Keeps it above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background-color: #11235a; /* Blue background */
+  color: #f6eca9; /* Yellow text */
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--yellow); /* Yellow */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 3em;
+}
+
+.navbar-links a {
+  color: var(--yellow); /* Yellow */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--yellow-2); /* Softer yellow for hover effect */
+}
+
+/* Push content below the fixed navbar */
+body {
+  margin: 0;
+  padding-top: calc(
+    var(--navbar-height) - 3px
+  ); /* Match the height of the navbar */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+}

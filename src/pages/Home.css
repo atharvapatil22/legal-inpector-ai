@@ -1,0 +1,79 @@
+/* General Container Styles */
+.home-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: var(--blue);
+  text-align: center;
+  background-color: var(--blue-2);
+  min-height: calc(100vh);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Input Section Styles */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Textarea Styles */
+.input-box {
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--blue-2);
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+.input-box:focus {
+  border-color: var(--yellow);
+}
+
+/* File Input Styles */
+.file-input {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  background-color: var(--yellow);
+  color: var(--blue);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.file-input:hover {
+  background-color: var(--yellow-2);
+}
+
+/* Button Styles */
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: var(--blue-2);
+  color: var(--yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--blue);
+}
